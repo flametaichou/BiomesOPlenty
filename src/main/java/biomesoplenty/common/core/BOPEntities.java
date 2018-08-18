@@ -64,11 +64,12 @@ public class BOPEntities
 
 		EntityRegistry.registerModEntity(EntityBird.class, "Bird", EntID++, BiomesOPlenty.instance, 80, 3, true);
 		registerEntityEgg(EntityBird.class, 5277691, 16772788);
+		if(mobSpawns && BOPConfigurationMain.spawnBird)
+			EntityRegistry.addSpawn(EntityBird.class, 10, 3, 5, EnumCreatureType.ambient, BiomeGenBase.forestHills, BiomeGenBase.birchForest, BiomeGenBase.birchForestHills, BiomeGenBase.forest, BiomeGenBase.roofedForest, BiomeGenBase.jungle, BiomeGenBase.jungleEdge, BiomeGenBase.jungleHills, BOPCBiomes.tropicalRainforest, BOPCBiomes.temperateRainforest, BOPCBiomes.rainforest, BOPCBiomes.seasonalForestClearing, BOPCBiomes.seasonalForest, BOPCBiomes.redwoodForest, BOPCBiomes.meadowForest, BOPCBiomes.eucalyptusForest, BOPCBiomes.denseForest, BOPCBiomes.woodland, BOPCBiomes.mapleWoods, BOPCBiomes.ominousWoods, BOPCBiomes.spruceWoods, BOPCBiomes.redwoodForest, BOPCBiomes.grove, BOPCBiomes.cherryBlossomGrove, BOPCBiomes.mysticGrove, BOPCBiomes.mangrove);
 		/*TODO: FEATURE if (Biomes.promisedLandForest.isPresent() && Biomes.promisedLandSwamp.isPresent() && Biomes.promisedLandPlains.isPresent() && Biomes.promisedLandShrub.isPresent())
 		{
 			EntityRegistry.addSpawn(EntityBird.class, 10, 3, 5, EnumCreatureType.ambient, Biomes.promisedLandForest.get(), Biomes.promisedLandSwamp.get(), Biomes.promisedLandPlains.get(), Biomes.promisedLandShrub.get());
 		}*/
-
 		EntityRegistry.registerModEntity(EntityPixie.class, "Pixie", EntID++, BiomesOPlenty.instance, 80, 3, true);
 		registerEntityEgg(EntityPixie.class, 16742365, 16645116);
 		if(mobSpawns && BOPConfigurationMain.spawnPixie)

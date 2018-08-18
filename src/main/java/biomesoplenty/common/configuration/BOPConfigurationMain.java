@@ -20,6 +20,7 @@ public class BOPConfigurationMain
 	public static boolean spawnGlob;
 	public static boolean spawnPhantom;
 	public static boolean spawnPixie;
+	public static boolean spawnBird;
 	public static Property trailsVersion;
 
 	public static void init(File configFile)
@@ -38,6 +39,7 @@ public class BOPConfigurationMain
 			spawnGlob = config.get("Mob settings", "Spawn Glob", true, null).getBoolean();
 			spawnPhantom = config.get("Mob settings", "Spawn Phantom", true, null).getBoolean();
 			spawnPixie = config.get("Mob settings", "Spawn Pixie", true, null).getBoolean();
+			spawnBird = config.get("Mob settings", "Spawn Bird", true, null).getBoolean();
 			
 		}
 		catch (Exception e)

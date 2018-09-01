@@ -51,10 +51,10 @@ public class BOPItems
 		BOPItemHelper.toolMaterialMud = EnumHelper.addToolMaterial("MUD", 0, 32, 0.5F, 0, 1);
 		BOPItemHelper.armorMaterialMud = EnumHelper.addArmorMaterial("MUD", 2, new int[] {1, 1, 1, 1}, 5);
 		
-		BOPItemHelper.toolMaterialAmethyst = EnumHelper.addToolMaterial("AMETHYST", 4, 2013, 15.0F, 5, 16);
-		BOPItemHelper.armorMaterialAmethyst = EnumHelper.addArmorMaterial("AMETHYST", 40, new int[] {3, 8, 8, 3}, 20);
+		BOPItemHelper.toolMaterialAmethyst = EnumHelper.addToolMaterial("AMETHYST", 8, 2560, 15.0F, 5, 16);
+		BOPItemHelper.armorMaterialAmethyst = EnumHelper.addArmorMaterial("AMETHYST", 60, new int[] {3, 8, 6, 3}, 20);
 		
-		BOPItemHelper.armorMaterialUnprotective = EnumHelper.addArmorMaterial("UNPROTECTIVE", -1, new int[] {0, 0, 0, 0}, 0);
+		BOPItemHelper.armorMaterialUnprotective = EnumHelper.addArmorMaterial("UNPROTECTIVE", -1, new int[] {1, 1, 1, 1}, 0);
 		
 		registerCraftingMaterials();
 	}
